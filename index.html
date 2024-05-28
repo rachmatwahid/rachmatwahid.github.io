@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arocta Theme</title>
+    <!-- Icon -->
+    <link href='img/icon_arocta.png' rel='icon' sizes='192x192' type='image/x-icon'/>
+    <link href='img/icon_arocta.png' rel='apple-touch-icon'/>
+    <link href='img/icon_arocta.png' rel='apple-touch-startup-image'/>
+    <meta content='img/icon_arocta.png' name='msapplication-square310x310logo'/>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'/>
+
+    <title>Arocta</title>
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="#">Arocta</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="img/icon_arocta.png" alt="Arocta" height="24" class="d-inline-block align-text-top">
+                Arocta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Landings
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="personal.html">Personal</a></li>
-                        </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Produk</a>
                     </li>
                 </ul>
             </div>
@@ -32,84 +44,195 @@
     </nav>
 </header>
 
-<main class="container">
+<main class="container-fluid">
 
-    <section class="px-3 pb-5 my-5 text-center border-bottom">
-        <h1 class="display-5 fw-bold text-body-emphasis">Kickstart your project with Arocta</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Arocta Theme build with a modular web design concept will easily kickstart your project, and build website & marketing site faster.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Purchase</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Demo</button>
+    <section id="hero" class="row align-content-center vh-100 pt-5 text-center border-bottom">
+            <h1 class="mt-5 display-4 fw-bold text-light">Kini saatnya UMKM Go Online! Jalankan Bisnis #DariManaAja</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 text-light">Anda bisa fokus melayani pelanggan dan biarkan website melakukan pemasaran online dan brandingnya.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-light btn-lg px-4 gap-3">Mulai</button>
+                </div>
+            </div>
+    </section>
+
+    <section id="about" class="row p-5 border-bottom">
+        <h2 class="text-center fw-bold">Tentang Kami</h2>
+        <div class="col-lg-6">
+            <img src="img/presentation.jpg" alt="Responsive" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="pt-5">Arocta</h3>
+            <p class="pb-5 lead">Kami adalah perusahaan web design dan development yang berbasis di Pontianak, Kalimantan Barat. Kami memiliki tim yang solid dengan talenta dalam mendesain dan membangun situs web untuk mendukung perkembangan bisnis Anda di dunia digital.</p>
+            <div class="d-flex mb-3">
+                <img src="img/eye.png" height="100px" alt="Reload">
+                <div class="ms-5"><h5>Visi</h5>
+                    <p>Menjadi perusahaan Web Developer terbaik di Indonesia</p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <img src="img/target.png" height="100px" alt="Code">
+                <div class="ms-5">
+                    <h5>Misi</h5>
+                    <p>Memberikan pelayanan terbaik dalam bidang jasa pembuatan situs web.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="row px-3 pb-5 my-5 border-bottom">
-        <div class="col-lg-6 pb-5">
-            <img src="img/responsive.png" alt="Responsive" class="img-fluid">
-        </div>
-        <div class="col-lg-6 py-5">
-            <h4 class="pt-5">Fully responsive and retina ready</h4>
-            <p class="pb-5">Arocta is designed to look great on desktop computers, tablets and mobile devices. Every element 100% responsive & retina ready.</p>
+    <section id="service" class="row p-5 border-bottom">
+        <h2 class="text-center fw-bold">Layanan</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 my-5">
+                    <img class="my-1 mx-auto d-block" src="img/presentation.jpg" height="200px" alt="Bootstrap">
+                    <h4 class="my-3">Gratis Konsultasi</h4>
+                    <p>Kami siap menjawab pertanyaan Anda untuk kualitas website yang sempurna.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 my-5">
+                    <img class="my-1 mx-auto d-block" src="img/schedule.jpg" height="200px" alt="Bootstrap">
+                    <h4 class="my-3">Berorientasi Target</h4>
+                    <p>Kami peduli dengan keinginan Anda untuk memiliki website yang unik dan menarik.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 my-5">
+                    <img class="my-1 mx-auto d-block" src="img/security.jpg" height="200px" alt="Bootstrap">
+                    <h4 class="my-3">Solusi Berkualitas</h4>
+                    <p>Tim kami mengutamakan kualitas diatas kuantitas demi kesuksesan bisnis Anda.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 my-5">
+                    <img class="my-1 mx-auto d-block" src="img/work.jpg" height="200px" alt="Bootstrap">
+                    <h4 class="my-3">Pemeliharaan Kontinu</h4>
+                    <p>Kami akan membantu proses perbaharui konten hingga menambah halaman di website.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 my-5">
+                    <img class="my-1 mx-auto d-block" src="img/analyse.jpg" height="200px" alt="Bootstrap">
+                    <h4 class="my-3">Desain Responsif</h4>
+                    <p>Website Anda tetap tampil memukau di ponsel, tablet, hingga komputer desktop pelanggan Anda.</p>
+                </div>
+                <div class="col-md-6 col-lg-4 my-5">
+                    <img class="my-1 mx-auto d-block" src="img/coding.jpg" height="200px" alt="Bootstrap">
+                    <h4 class="my-3">SEO Friendly</h4>
+                    <p>Naikkan peringkat website Anda menjadi yang tertinggi di mesin pencari di atas kompetitor lainnya.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="p-3 my-5 border-bottom">
-        <h2 class="text-center">Features</h2>
-        <div class="row">
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/bootstrap.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">Built with Bootstrap 5</h4>
-                <p>Our theme is the powerful front-end solution based on Bootstrap 5 —Powerful, extensible, and feature-packed frontend toolkit.</p>
+    <section id="product" class="row p-5 border-bottom">
+        <h2 class="text-center fw-bold">Produk</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="accordion my-5" id="accordionBlog">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlog" aria-expanded="true" aria-controls="collapseBlog">
+                                    <h5>Blog</h5>
+                                </button>
+                            </div>
+                            <div id="collapseBlog" class="accordion-collapse collapse" data-bs-parent="#accordionBlog">
+                                <div class="accordion-body">
+                                    Tulisan Anda merupakan karya yang layak untuk diketahui semua orang. Publikasikan tulisan Anda melalui blog seperti Blogspot atau Wordpress. Kami akan mendesain tampilan blog Anda lebih unik dan menarik daripada kompetitor.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionGov">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGov" aria-expanded="true" aria-controls="collapseGov">
+                                    <h5>Pemerintahan</h5>
+                                </button>
+                            </div>
+                            <div id="collapseGov" class="accordion-collapse collapse" data-bs-parent="#accordionGov">
+                                <div class="accordion-body">
+                                    Tampilkan profil instansi pemerintahan Anda untuk dikenal oleh masyarakat. Kami mendukung penuh integritas pemerintah Indonesia dalam transparansi informasi.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="accordion my-5" id="accordionCompany">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompany" aria-expanded="true" aria-controls="collapseCompany">
+                                    <h5>Perusahaan</h5>
+                                </button>
+                            </div>
+                            <div id="collapseCompany" class="accordion-collapse collapse" data-bs-parent="#accordionCompany">
+                                <div class="accordion-body">
+                                    Perusahaan Anda seharusnya dapat diketahui oleh semua orang di era digital ini. Kami membantu Anda mewujudkan citra perusahaan yang terintegrasi teknologi digital yang inovatif.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionPortfolio">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePortfolio" aria-expanded="true" aria-controls="collapsePortfolio">
+                                    <h5>Portfolio</h5>
+                                </button>
+                            </div>
+                            <div id="collapsePortfolio" class="accordion-collapse collapse" data-bs-parent="#accordionPortfolio">
+                                <div class="accordion-body">
+                                    Seorang desainer, fotografer, arsitek, dan animator seharusnya memiliki galeri karya-karyanya yang spektakuler.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="accordion my-5" id="accordionCommerce">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommerce" aria-expanded="true" aria-controls="collapseCommerce">
+                                    <h5>e-Commerce</h5>
+                                </button>
+                            </div>
+                            <div id="collapseCommerce" class="accordion-collapse collapse" data-bs-parent="#accordionCommerce">
+                                <div class="accordion-body">
+                                    Jaman sekarang tidak perlu berjualan dengan membuka toko. Cukup dengan situs web e-commerce, Anda sudah dapat memasarkan produk Anda ke seluruh pelanggan tanpa henti selama 24 jam.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionUMKM">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUMKM" aria-expanded="true" aria-controls="collapseUMKM">
+                                    <h5>UMKM</h5>
+                                </button>
+                            </div>
+                            <div id="collapseUMKM" class="accordion-collapse collapse" data-bs-parent="#accordionUMKM">
+                                <div class="accordion-body">
+                                    Tingkatkan jumlah pelanggan dengan memperkenalkan produk/jasa yang terpopuler dari UMKM Anda. Tunjukkan bahwa UMKM tidak akan kalah bersaing dalam dunia digital.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/sass.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">Easy to Customize with Sass</h4>
-                <p>We built using Sass. Easily change colors, typo, and much more. It is the most mature, stable, and powerful CSS extension language in the world.</p>
-            </div>
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/html_arocta.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">W3C Valid HTML Code</h4>
-                <p>All HTML files are checked via the W3C validator to ensure 100% valid code. As you probably know invalid HTML limits innovation, but our theme is innovative at its core.</p>
-            </div>
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/javascript.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">Future Proof Java-Script</h4>
-                <p>Say jQuery to NO! With the block we build a complete vanilla. js code for all the pages.</p>
-            </div>
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/docs.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">Extensive Docs</h4>
-                <p>Our theme documentation helps developers, It has a theme installation workflow and how to use it for your purpose and easy copy and paste snippets.</p>
-            </div>
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/device.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">Mobile friendly website</h4>
-                <p>Arocta Theme is Mobile friendly, Designing websites to be mobile friendly ensures that your pages perform well on all devices.</p>
-            </div>
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/paper_plane.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">Kick-Start Your Development</h4>
-                <p>Full task automation. Start your development process fast and easy with Node.js and Gulp setup. Configuration files are included.</p>
-            </div>
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/sun.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">Light/ Dark Mode</h4>
-                <p>Block theme pages also come with the light / dark mode. All components include a dark variant that lets you style your site differently when dark mode is enabled.</p>
-            </div>
-            <div class="col-lg-4 my-5">
-                <img class="my-1" src="img/support.svg" height="40px" alt="Bootstrap">
-                <h4 class="my-3">Active Support</h4>
-                <p>Our support team helps you solve any issues you have in working with Block them. To get help from our team.</p>
+        </div>
+    </section>
+
+    <section class="row p-5 border-bottom">
+        <div class="col-sm-12 col-md-8">
+            <h5 class="display-3 fw-bold text-body-emphasis">Tertarik memiliki website bersama AROCTA?</h5>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <p class="lead">97% pengguna internet mencari info produk/jasa lewat situs web.</p>
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-lg bg-blue">Hubungi Kami</button>
             </div>
         </div>
     </section>
 
 </main>
 
-<footer class="container text-center">
-    <p>Copyright © 2023 Arocta Bootstrap 5 Theme | Designed by <a href="https://rachmatwahid.com/" target="_blank">Rachmat Wahid Saleh Insani</a></p>
+<footer class="py-5">
+    <p class="text-center">Copyright © 2023 Arocta | Designed by <a href="https://rachmatwahid.com/" target="_blank">Insani</a></p>
 </footer>
 
 <script src="https://kit.fontawesome.com/84c832cc1d.js" crossorigin="anonymous"></script>

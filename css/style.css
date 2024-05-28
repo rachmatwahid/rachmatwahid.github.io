@@ -1,3 +1,7 @@
+a {
+    color: #6382c8;
+}
+
 .text-bg-android {
     background-color: #E8F5E9;
 }
@@ -8,4 +12,19 @@
 
 .text-bg-html {
     background-color: #FFF3E0;
+}
+
+h1, h2 {
+    color: #6382c8;
+}
+
+.bg-blue {
+    color: white;
+    background-color: #6382c8;
+}
+
+#hero {
+    background-image: url("/img/hero.png");
+    background-size: cover;
+    background-position: center bottom;
 }
