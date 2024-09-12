@@ -1,26 +1,19 @@
+:root {
+    --primary: #6382c8;
+}
+
 a {
-    color: #6382c8;
-}
-
-.text-bg-android {
-    background-color: #E8F5E9;
-}
-
-.text-bg-kotlin {
-    background-color: #E8EAF6;
-}
-
-.text-bg-html {
-    background-color: #FFF3E0;
+    color: var(--primary);
 }
 
 h1, h2 {
-    color: #6382c8;
+    color: var(--primary);
 }
 
 .bg-blue {
     color: white;
-    background-color: #6382c8;
+    background-color: var(--primary);
+    border: none;
 }
 
 #hero {
